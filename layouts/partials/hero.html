@@ -1,19 +1,36 @@
+{{ partial "header.html" . }}
+
 <div class="hero__container">
     <div class="panel-overlay">
-
     </div>
     
     <div class="hero-content__overlay">
         <div class="hero-text">
-            <h1>This is my heading</h1>
+            <h1>Performance based websites for<br> businesses</h1>
+            <p>
+                Creating strategies that deliver results while simplifying the website experience
+            </p>
+            <div class="btn-container">
+                <svg height="50" class="btn-circle"> 
+                    <circle cx="20" cy="25" r="20" stroke-width="3" fill="#00B6FF" />
+                  </svg> 
+            <a href="#">View Case Studies</a>
+            </div>
         </div>
-        <div class="slider__container">
+        <div class="slider__container" style="color:white">
             <div class="multiple-items">
-                <div>your content</div>
-                <div>your content</div>
-                <div>your content</div>
-                <div>your content</div>
-                <div>your content</div>
+                <div>
+                    <img src="{{ .Site.BaseURL }}images/s1.jpg" alt="">
+                </div>
+                <div>
+                    <img src="{{ .Site.BaseURL }}images/s2.jpg" alt="">
+                </div>
+                <div>
+                    <img src="{{ .Site.BaseURL }}images/s3.jpg" alt="">
+                </div>
+                <div>
+                    <img src="{{ .Site.BaseURL }}images/s3.jpg" alt="">
+                </div>
             </div>
         </div>
     </div>

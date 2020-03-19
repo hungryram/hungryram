@@ -1,3 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/* UNIQUE BUTTON */
+.btn-container {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    cursor: pointer;
+}
+
+.btn-circle {
+    flex: 1;
+}
+
+.btn-container a:after {
+    content: '→';
+    margin-left: 10px;
+}
+
+.btn-container a {
+    margin-right: 10px;
+    position: absolute;
+    left: 20px;
+    letter-spacing: 1px;
+    font-family: "Roboto", sans-serif;
+}
+
+.btn-container:hover .btn-circle {
+    margin-left: 167px;
+    transition: all .3s ease-in-out;
+}
+
+.btn-container:hover circle {
+    r: 14;
+    transition: all .3s ease-in-out;
+}
+
+.btn-container .btn-circle {
+    transition: all .2s ease-in-out;
+}
+
+/* END UNIQUE BUTTON*/
+
+
+.header {
+    background: transparent;
+    position: absolute;
+    z-index: 100;
+    left: 10%;
+    right: 10%;
+    top: 30px;
+    display: flex;
+}
+
+.logo {
+    flex: 50%;
+}
+
+.nav {
+    flex: 50%;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul {
+    text-align: right;
+}
+
+nav ul li a {
+    color: #d1d1d1;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+
 .hero__container {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
                 url("../images/hero.jpg");
@@ -5,13 +82,59 @@
     background-size: cover;
 }
 
-.hero__container h1 {
+.hero-text {
     margin: 0;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 35%;
+
+}
+
+.hero-text h1{
+    font-size: 2em;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.hero-text p {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+.hero-text a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
 }
 
 .panel-overlay {
     height: 100vh;
-    width: 40%;
+    width: 30%;
     background-color: rgba(0, 0, 0, 0.8);
     position: absolute;
+}
+
+.slider__container {
+    width: 55%;
+    position: absolute;
+    top: 40vh;
+    right: 0;
+}
+
+.multiple-items div {
+    height: 300px;
+    margin: 0 15px;
+}
+
+.multiple-items img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
 }
