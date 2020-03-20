@@ -6,6 +6,7 @@
     align-items: center;
     height: 50px;
     cursor: pointer;
+    position: absolute;
 }
 
 .btn-circle {
@@ -23,6 +24,7 @@
     left: 20px;
     letter-spacing: 1px;
     font-family: "Roboto", sans-serif;
+    text-decoration: none;
 }
 
 .btn-container:hover .btn-circle {
@@ -137,4 +139,99 @@ nav ul li a {
     height: 100%;
     width: 100%;
     border-radius: 10px;
+}
+
+/* ABOUT */
+
+.about__container {
+    background: url("../images/aboutbg.jpg") no-repeat center;
+
+    background-size: cover;
+}
+
+.about-content__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10%;
+    height: 70vh;
+}
+
+.about-img,
+.about-bio {
+    flex: 1;
+}
+
+.about-bio a {
+    color: #000;
+}
+
+/* SERVICE */
+.main-service__container {
+    padding: 100px 0;
+}
+
+.service__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10%;
+}
+
+.service-content {
+    flex: 1;
+    padding: 0 20px 0 0;
+}
+
+.service__container a:nth-child(2) {
+    height: 60vh;
+    background: url("../images/service1.jpg") no-repeat;
+    background-size: cover;
+    flex: 1;
+    margin: 0 5px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.service__container a:nth-child(3) {
+    height: 60vh;
+    background: url("../images/service2.jpg") no-repeat center;
+    background-size: cover;
+    flex: 1;
+    margin: 0 5px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.service__container a:nth-child(4) {
+    height: 60vh;
+    background: url("../images/service3.jpg") no-repeat center;
+    background-size: cover;
+    flex: 1;
+    margin: 0 5px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.service__container a {
+    text-decoration: none;
+}
+
+.re-slider {
+    background: #282828;
+    height: 50px;
+    width: 0%;
+    transition: all .2s ease-in-out;
+}
+
+.re-text {
+    margin: 0;
+    position: relative;
+    bottom: 32px;
+    margin-left: 10px;
+}
+
+.service-one:hover .re-slider {
+    width: 100%;
+    transition: all .2s ease-in-out;
 }
