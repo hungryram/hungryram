@@ -1,5 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.hr-hero {
+    height: 1px;
+    width: 30%;
+    position: absolute;
+    background-color: #181818;
+}
+
+.hr-hero-bottom {
+    height: 1px;
+    width: 20%;
+    position: absolute;
+    background-color: #181818;
+    bottom: 15px;
+}
+
 /* UNIQUE BUTTON */
 .btn-container {
     display: flex;
@@ -78,7 +97,7 @@ nav ul li a {
 }
 
 .hero__container {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0)),
                 url("../images/hero.jpg");
     height: 100vh;
     background-size: cover;
@@ -144,9 +163,11 @@ nav ul li a {
 /* ABOUT */
 
 .about__container {
-    background: url("../images/aboutbg.jpg") no-repeat center;
-
+    /* background: linear-gradient(rgba(255, 255, 255, 0), rgb(255, 255, 255)),
+    url("../images/aboutbg.jpg") no-repeat center; */
+    background-color: #000000;
     background-size: cover;
+    color: #fff;
 }
 
 .about-content__container {
@@ -154,7 +175,7 @@ nav ul li a {
     align-items: center;
     justify-content: center;
     margin: 0 10%;
-    height: 70vh;
+    height: 50vh;
 }
 
 .about-img,
@@ -162,14 +183,94 @@ nav ul li a {
     flex: 1;
 }
 
-.about-bio a {
-    color: #000;
+.about-bio h1 {
+    text-transform: uppercase;
 }
+
+.about-bio p {
+    color: #cccccc;
+}
+
+.about-bio a {
+    color: #fff;
+}
+
 
 /* SERVICE */
 .main-service__container {
-    padding: 100px 0;
+    padding: 150px 0;
+    background-color: #E3E4E8;
 }
+
+/* PAGE SPEED */
+
+.speed__container {
+    background-color: #000000;
+}
+
+.speed-title-container {
+    margin: 0 10%;
+}
+
+.speed-title-container h2 {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+
+.speed-title-container span {
+    color: #00B6FF;
+}
+
+.speed-title-container p {
+    color: #cccccc;
+}
+
+.input__container {
+    display: flex;
+    margin: 0 10%;
+    position: relative;
+    top: 70px;
+}
+
+.input-field,
+.score {
+    flex: 50%;
+    text-align: center;
+    background-color: #181818;
+    padding: 60px;
+    margin: 0 10px;
+    box-shadow: 0px 14px 0 -9px #00b6ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.score a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#score-btn {
+    padding: 7px 30px;
+    margin-left: -27px;
+    border: 0;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color: white;
+    background-color: #00b6ff;
+    cursor: pointer;
+}
+
+input#text {
+    padding: 5px;
+    border-radius: 50px;
+    border: 2px solid white;
+}
+
 
 .service__container {
     display: flex;
@@ -181,6 +282,11 @@ nav ul li a {
 .service-content {
     flex: 1;
     padding: 0 20px 0 0;
+}
+
+.service-content h2 {
+    text-transform: uppercase;
+    color: #1A1A1A;
 }
 
 .service__container a:nth-child(2) {
@@ -215,23 +321,12 @@ nav ul li a {
 
 .service__container a {
     text-decoration: none;
+    box-shadow: 1px 2px 20px 3px #a2a2a2;
 }
 
-.re-slider {
-    background: #282828;
-    height: 50px;
-    width: 0%;
-    transition: all .2s ease-in-out;
-}
-
-.re-text {
-    margin: 0;
-    position: relative;
-    bottom: 32px;
-    margin-left: 10px;
-}
-
-.service-one:hover .re-slider {
-    width: 100%;
-    transition: all .2s ease-in-out;
+.service-one div,
+.service-two div,
+.service-three div {
+    background-color: #181818;
+    padding: 10px;
 }
