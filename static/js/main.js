@@ -4,4 +4,9 @@ $('.multiple-items').slick({
     autoplay: true,
     autoplaySpeed: 2000,
   });
-      
+
+  $('.single-item').slick({
+    // autoplay: true,
+    // autoplaySpeed: 2000,
+    dots: true
+  });
