@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Oswald:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
 body {
     font-family: "Roboto", sans-serif;
@@ -8,6 +9,22 @@ body {
 
 * {
     box-sizing: border-box;
+}
+
+.interior-image {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
+        url("../images/contact-hungry-ram.jpg") no-repeat center;
+    background-size: cover;
+    color: #fff;
+    font-size: 2rem;
+}
+
+main {
+    padding: 90px;
 }
 
 .hr-hero {
@@ -70,13 +87,15 @@ body {
 
 
 .header {
-    background: transparent;
-    position: absolute;
+    background: #0c0c0c;
+    /* position: absolute; */
     z-index: 100;
     left: 10%;
     right: 10%;
     top: 30px;
     display: flex;
+    padding: 20px;
+    align-items: center;
 }
 
 .logo {
@@ -194,6 +213,7 @@ nav ul li a {
 
 .about-bio p {
     color: #cccccc;
+    font-size: 1.4rem;
 }
 
 .about-bio a {
@@ -204,7 +224,7 @@ nav ul li a {
 /* SERVICE */
 .main-service__container {
     padding: 150px 0;
-    background-color: #ffffff;
+    background-color: #191919;
 }
 
 /* PAGE SPEED */
@@ -287,11 +307,16 @@ input#text {
 .service-content {
     flex: 1;
     padding: 0 20px 0 0;
+    color: #ffffff;
+}
+
+.service-content p {
+    font-size: 1.2rem;
 }
 
 .service-content h2 {
     text-transform: uppercase;
-    color: #1A1A1A;
+    color: #ffffff;
 }
 
 .service__container a:nth-child(2) {
@@ -326,7 +351,7 @@ input#text {
 
 .service__container a {
     text-decoration: none;
-    box-shadow: 1px 2px 20px 3px #a2a2a2;
+    box-shadow: 1px 2px 20px 3px #000000;
 }
 
 .service-one div,
@@ -339,7 +364,7 @@ input#text {
 /* PROCESS */
 
 .process__container {
-    background-color: #f0f0f0;
+    background-color: #191919;
     padding: 100px 0;
 }
 
@@ -351,6 +376,12 @@ input#text {
 
 .process-title {
     flex: 33.3%;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.process-title span {
+    color: #00B6FF;
 }
 
 .process-title h4,
@@ -360,11 +391,14 @@ input#text {
 
 .process-text {
     flex: 66.6%;
+    color: #cecece;
+    font-size: 1.2rem;
 }
 
 .featured-process {
     display: flex;
     margin: 3% 10%;
+    
 }
 
 .main-featured {
@@ -406,8 +440,23 @@ input#text {
 .step-three{
     flex: 1;
     padding: 20px;
-    border: 1px solid #dfdfdf;
+    border: 1px solid #393939;
     margin: 20px;
+
+}
+
+.step-one h4,
+.step-two h4,
+.step-three h4 {
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+.step-one p,
+.step-two p,
+.step-three p {
+    color: #cecece;
+    font-size: 1.2rem;
 }
 
 /* FOOTER */
@@ -477,6 +526,10 @@ footer {
     text-align: center;
 }
 
+.testimonial-title {
+    margin: 0 10%;
+}
+
 .testimonial-one,
 .testimonial-two,
 .testimonial-three {
@@ -541,11 +594,102 @@ footer {
     color: #cfcfcf;
 }
 
+.testimonial-title h2 {
+    margin: 0;
+    color: #fff;
+    text-transform: uppercase;
+}
+
 .client-name {
     font-weight: 800;
     text-transform: uppercase;
     font-size: 14px;
     color: #ffffff;
+}
+
+/* CONTACT PAGE */
+
+.contact-page__container {
+    display: flex;
+    padding: 0 20%;
+}
+
+.contact-page-content {
+    flex: 1;
+}
+
+.contact-form {
+    flex: 1;
+    background-color: #36445D;
+    padding: 50px 50px;
+}
+
+.contact-form button {
+    -webkit-appearance: none;
+    border: none;
+    background-color: #00B6FF;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 15px 50px;
+}
+
+.contact-page__container input,
+.contact-page__container textarea {
+    -webkit-appearance: none;
+    color: #cccc;
+    padding: 15px;
+    width: 100%;
+    border: none;
+}
+
+.contact-form textarea {
+    height: 200px;
+}
+
+.contact-page-content {
+    flex: 1;
+    padding: 0 30px;
+    color: #666;
+}
+
+.contact-page-content h4 {
+    color: #333;
+}
+
+.contact-page-content h6 {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+    color: rgba(0,0,0,0.4)!important;
+    font-weight: 300;
+}
+
+.contact-form h4 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 200;
+    font-family: "Poppins", sans-serif;
+}
+
+.contact-page-content h4 {
+    font-size: 2rem;
+}
+
+.contact-phone {
+    padding: 20px 0;
+}
+
+.contact-email {
+    padding: 20px 0;
+}
+
+.contact-phone a,
+.contact-email a {
+    color: #666;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
 }
 
 /* Medium (md) */
@@ -560,8 +704,17 @@ footer {
 .score,
 .about-content__container,
 .input__container,
-.testimonial__container {
+.testimonial__container,
+.contact-page__container {
     flex-direction: column;
+}
+
+main {
+    padding: 40px;
+}
+
+.contact-page__container {
+    padding: 0;
 }
 
 #score-btn {
@@ -579,7 +732,7 @@ footer {
 }
 
 .about-content__container {
-    height: 80vh;
+    height: 110vh;
 }
 
 .input-field, .score {
@@ -597,4 +750,6 @@ footer {
 .speed__container {
     padding-top: 100px;
 }
+
 }
+

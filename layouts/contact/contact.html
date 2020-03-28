@@ -1,0 +1,38 @@
+{{ define "main" }}
+
+<div class="contact-page__container">
+    <div class="contact-page-content">
+        <h4>Want to start a project? Let's start your investment and make your ideas happen</h4>
+        <p>Need some more insight on our services? Looking to get started? Send us an email and we’ll follow up with you shortly! Thank you.</p>
+        <div class="contact-email">
+        <h6>Email</h6>
+        <a href="">info@hungryram.com</a>
+        </div>
+        <div class="contact-phone">
+        <h6>Phone</h6>
+        <a href="">(951) 200-5286</a>
+        </div>
+    </div>
+    <div class="contact-form">
+        <h4>Send a Message</h4>
+        <form name="Website Contact Form" method="POST" data-netlify="true">
+            <p>
+              <input type="text" name="name" placeholder="Name" required/>
+            </p>
+            <p>
+              <input type="email" name="email" placeholder="Email" required/>
+            </p>
+            <p>
+              <textarea name="message" placeholder="Message" required></textarea>
+            </p>
+            <p>
+              <button type="submit">Send</button>
+            </p>
+          </form>
+    </div>
+
+</div>
+
+
+
+{{ end }}
