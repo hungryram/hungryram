@@ -53,7 +53,7 @@ body {
 }
 
 .btn-container:hover .btn-circle {
-    margin-left: 167px;
+    margin-left: 50px;
     transition: all .3s ease-in-out;
 }
 
@@ -296,7 +296,7 @@ input#text {
 
 .service__container a:nth-child(2) {
     height: 60vh;
-    background: url("../images/service1.jpg") no-repeat;
+    background: url("../images/realestate.jpg") no-repeat;
     background-size: cover;
     flex: 1;
     margin: 0 5px;
@@ -340,7 +340,7 @@ input#text {
 
 .process__container {
     background-color: #f0f0f0;
-    padding: 50px 0;
+    padding: 100px 0;
 }
 
 .process-content {
@@ -414,6 +414,7 @@ input#text {
 
 footer {
     background-color: #101010;
+    padding-top: 50px;
 }
 
 .footer-inner {
@@ -472,7 +473,24 @@ footer {
 .testimonial__container {
     padding: 100px 0;
     margin: 0 10%;
+    display: flex;
+    text-align: center;
 }
+
+.testimonial-one,
+.testimonial-two,
+.testimonial-three {
+    flex: 1;
+    color: #c4c4c4;
+    padding: 30px 50px;
+}
+
+.testimonial__container img {
+    height: 200px;
+    flex: 1;
+    object-fit: contain;
+}
+
 
 .testimonial__container .slick-slide img {
     margin: 0 auto;
@@ -483,11 +501,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.testimonial__container img {
-    flex: 1;
-    object-fit: contain;
 }
 
 .testimonial__container .testimonial-content {
@@ -546,7 +559,42 @@ footer {
 .input-field,
 .score,
 .about-content__container,
-.input__container {
+.input__container,
+.testimonial__container {
     flex-direction: column;
+}
+
+#score-btn {
+    margin-left: 0;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+
+.service__container {
+    display: block;
+}
+
+.hero-text {
+    width: auto;
+}
+
+.about-content__container {
+    height: 80vh;
+}
+
+.input-field, .score {
+    margin: 15px 10px;
+}
+
+.step-one, .step-two, .step-three {
+    margin: 10px 0;    
+}
+
+.about__container {
+    padding-top: 50px;
+}
+
+.speed__container {
+    padding-top: 100px;
 }
 }
