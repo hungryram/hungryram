@@ -51,7 +51,7 @@ collections:
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'projects'
     label: 'Projects'
-    folder: 'projects/'
+    folder: 'content/projects'
     slug: '{{slug}}'
     create: true
     editor:
