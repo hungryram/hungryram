@@ -471,7 +471,7 @@ footer {
     justify-content: center;
     align-items: center;
     margin: 0 10%;
-    height: 30vh;
+    height: 40vh;
 
 }
 
@@ -492,6 +492,7 @@ footer {
     color: #fff;
     background-color: #1B1B1B;
     padding: 10px 0;
+    margin-top: 50px;
 }
 
 .footer-bottom p,
