@@ -67,7 +67,7 @@ collections:
          [
           { label: 'Meta Title', name: 'metatitle', widget: 'string' },
           { label: 'Meta Description', name: 'metadescription', widget: 'string' },
-          ]
+          ],
     fields:
       - label: 'Project'
         name: 'project'
