@@ -66,6 +66,7 @@ collections:
          fields:
           - { label: 'Meta Title', name: 'metatitle', widget: 'string' }
           - { label: 'Meta Description', name: 'metadescription', widget: 'string' }
+      - { label: 'Project Title', name: 'title', widget: 'string' }
       - { label: 'The Client', name: 'theclient', widget: 'markdown' }
       - { label: 'The Challenge', name: 'thechallenge', widget: 'markdown' }
       - { label: 'The Approach', name: 'theapproach', widget: 'markdown' }
