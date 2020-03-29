@@ -72,3 +72,4 @@ collections:
       - { label: 'The Approach', name: 'theapproach', widget: 'markdown' }
       - { label: 'The launch', name: 'thelaunch', widget: 'markdown' }
       - { label: 'Client Review', name: 'projectreview', widget: 'markdown' }
+      - { label: 'Project Image', name: 'projectimage', widget: 'image' }
