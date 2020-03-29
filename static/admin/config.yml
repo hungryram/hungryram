@@ -60,16 +60,29 @@ collections:
     editor:
       preview: false
     fields:
-      -  label: 'SEO'
+      -  label: 'Page SEO'
          name: 'seo'
          widget: 'object'
          fields:
           - { label: 'Meta Title', name: 'metatitle', widget: 'string' }
           - { label: 'Meta Description', name: 'metadescription', widget: 'string' }
-      - { label: 'Project Title', name: 'title', widget: 'string' }
-      - { label: 'The Client', name: 'theclient', widget: 'markdown' }
-      - { label: 'The Challenge', name: 'thechallenge', widget: 'markdown' }
-      - { label: 'The Approach', name: 'theapproach', widget: 'markdown' }
-      - { label: 'The launch', name: 'thelaunch', widget: 'markdown' }
-      - { label: 'Client Review', name: 'projectreview', widget: 'markdown' }
-      - { label: 'Project Image', name: 'projectimage', widget: 'image' }
+
+    fields:
+      - label: 'Project'
+        name: 'project'
+        widget: 'object'
+        fields:
+          - { label: 'Project Title', name: 'title', widget: 'string' }
+          - { label: 'The Client', name: 'theclient', widget: 'markdown' }
+          - { label: 'The Challenge', name: 'thechallenge', widget: 'markdown' }
+          - { label: 'The Approach', name: 'theapproach', widget: 'markdown' }
+          - { label: 'The launch', name: 'thelaunch', widget: 'markdown' }
+          - { label: 'Client Review', name: 'projectreview', widget: 'markdown' }
+          - { label: 'Client Name', name: 'reviewname', widget: 'string' }
+    fields:
+      - label: 'Project Image'
+        name: 'projectphoto'
+        widget: 'object'
+        fields:
+          - { label: 'Project Image', name: 'projectimage', widget: 'image' }
+          - { label: 'Image Alt Tag', name: 'projectimagealt', widget: 'string' }
