@@ -50,8 +50,8 @@ collections:
       - { label: 'Meta Description', name: 'metadescription', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
 
-  - name: 'Projects'
-    label: 'Blog'
+  - name: 'projects'
+    label: 'Projects'
     folder: 'content/projects'
     create: true
     slug: '{{slug}}'
