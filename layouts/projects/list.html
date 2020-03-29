@@ -1,0 +1,14 @@
+{{ define "main" }}
+
+<div class="project__container">
+<div class="project-list-image"></div>
+    <ul class="project-list">
+        {{ range .Pages }}
+        <li><a href="{{.Permalink}}">{{.Title}}</a></li>
+    {{ end }}
+    </ul>
+
+    
+</div>
+
+{{ end }}

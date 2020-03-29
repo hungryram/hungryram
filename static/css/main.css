@@ -6,6 +6,9 @@ body {
     font-family: "Roboto", sans-serif;
     line-height: 1.5
 }
+ img {
+     max-width: 100%;
+ }
 
 * {
     box-sizing: border-box;
@@ -693,6 +696,104 @@ footer {
     font-family: "Poppins", sans-serif;
 }
 
+/* PROJECT LIST PAGE */
+
+.project__container li {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 30px 0;
+    list-style: none;
+    transition: all .2s ease-in-out;
+
+}
+
+.project__container li a {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    color: #000;
+    font-weight: 800;
+    transition: all .2s ease-in-out;
+
+}
+
+.project__container li:hover {
+    background-color: #e0e0e0;
+    transition: all .2s ease-in-out;
+}
+
+.project__container li:hover a {
+    padding-left: 20px;
+    transition: all .2s ease-in-out;
+
+}
+
+.project__container {
+    display: flex;
+}
+
+.project-list-image,
+.project-list {
+    flex: 1;
+    height: 50vh;
+}
+
+.project-list-image {
+    background: url("../images/projects.jpg") no-repeat center;
+    background-size: cover;
+}
+
+/* SINGLE PROJECT VIEW */
+
+.client-project__container {
+    border-left: 1px solid #e0e0e0;
+    padding-left: 70px;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.client-project__container h1,
+.client-project__container h2 {
+    margin: 0;
+}
+
+.client-project__container h1 {
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+.the-client,
+.the-challenge,
+.the-approach,
+.the-launch {
+    padding: 100px 0;
+}
+
+.the-client p,
+.the-challenge p,
+.the-approach p,
+.the-launch p {
+    color: #696969;
+    line-height: 2;
+}
+
+.project-testimonial {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.project-testimonial i {
+    margin-right: 10px;
+}
+
+.project-main-image {
+    text-align: center;
+}
+
+.project-main-image img {
+    border: 1px solid #696969;
+}
+
 /* Medium (md) */
 @media (max-width: 768px) {
 .testimonial__container .slick-initialized .slick-slide,
@@ -708,6 +809,10 @@ footer {
 .testimonial__container,
 .contact-page__container {
     flex-direction: column;
+}
+
+.project-list-image {
+    display: none;
 }
 
 main {

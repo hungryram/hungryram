@@ -49,16 +49,18 @@ collections:
       - { label: 'Meta Title', name: 'metatitle', widget: 'string' }
       - { label: 'Meta Description', name: 'metadescription', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: 'projects'
-    label: 'Projects'
+
+  - name: 'Projects'
+    label: 'Blog'
     folder: 'content/projects'
-    slug: '{{slug}}'
     create: true
+    slug: '{{slug}}'
     editor:
       preview: false
     fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Meta Title', name: 'metatitle', widget: 'string' }
-      - { label: 'Meta Description', name: 'metadescription', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'SEO', name: 'seo', widget: 'list', fields: [
+          { label: 'Meta Title', name: 'metatitle', widget: 'string' },
+          { label: 'Meta Description', name: 'metadescription', widget: 'string' },
+        ]
+      }
+      - { label: 'Page Title', name: 'pagetitle', widget: 'string' }
