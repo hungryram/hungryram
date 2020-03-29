@@ -69,8 +69,9 @@ collections:
       -  label: 'Project Overview'
          name: 'overview'
          widget: 'object'
+         collapsed: false
          fields:
-          - { label: 'Project Title', name: 'title', widget: 'string' }
+          - { label: 'Project Title', name: 'title', widget: 'string', required: true }
           - { label: 'The Client', name: 'theclient', widget: 'markdown' }
           - { label: 'The Challenge', name: 'thechallenge', widget: 'markdown' }
           - { label: 'The Approach', name: 'theapproach', widget: 'markdown' }
