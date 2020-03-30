@@ -4,35 +4,35 @@
     <div class="the-client">
         <h2>01</h2>
         <h1>The Client</h1>
-        <p>{{ .Params.Theclient }}</p>
+        <p>{{ .Params.Overview.Theclient }}</p>
     </div>
 
     <div class="the-challenge">
         <h2>02</h2>
         <h1>The Challenge</h1>
-        <p>{{ .Params.Thechallenge }}</p>
+        <p>{{ .Params.Overview.Thechallenge }}</p>
     </div>
 
     <div class="the-approach">
         <h2>03</h2>
         <h1>The Approach</h1>
-        <p>{{ .Params.Theapproach }}</p>
+        <p>{{ .Params.Overview.Theapproach }}</p>
     </div>
 
     <div class="the-launch">
         <h2>03</h2>
         <h1>The Launch</h1>
-        <p>{{ .Params.Thelaunch }}</p>
+        <p>{{ .Params.Overview.Thelaunch }}</p>
     </div>
 
 </div>
 <div class="project-testimonial">
     <h1>Client Review</h1>
-    <p><em>{{ .Params.Projectreview }}</em></p>
-    <p><em><i class="fas fa-minus"></i>{{ .Params.Reviewname }}</em></p>
+    <p><em>{{ .Params.Overview.Projectreview }}</em></p>
+    <p><em><i class="fas fa-minus"></i>{{ .Params.Overview.Reviewname }}</em></p>
 </div>
 <div class="project-main-image">
-    <img src="{{ .Site.BaseURL }}{{ .Params.Projectimage }}" alt="{{ .Params.Projectimagealt }}">
+    <img src="{{ .Site.BaseURL }}{{ .Params.Overview.Projectimage }}" alt="{{ .Params.Overview.Projectimagealt }}">
 </div>
 
 {{ end }}
