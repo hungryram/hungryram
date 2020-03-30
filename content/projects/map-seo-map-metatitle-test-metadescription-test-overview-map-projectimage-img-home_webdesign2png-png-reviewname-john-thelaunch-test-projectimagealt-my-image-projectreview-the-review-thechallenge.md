@@ -3,7 +3,7 @@ seo:
   metatitle: test
   metadescription: test
 overview:
-  projectimage: /img/home_webdesign2png.png
+  projectimage: /img/hero.png
   reviewname: john
   thelaunch: test
   projectimagealt: my image
