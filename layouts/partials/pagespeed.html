@@ -6,15 +6,12 @@
     
     <div class="input__container">
         <div class="input-field">
-            <input type="text" id="text" placeholder="yourwebsite.com"/>
+            <input type="text" id="text" placeholder="yourwebsite.com" required/>
             <input type="button" id="score-btn" value="Submit" onClick="javascript: window.open('https://developers.google.com/speed/pagespeed/insights/?url=' + document.getElementById('text').value);" />
         </div>
         <div class="score">
             <div class="btn-container">
-                <svg height="50" class="btn-circle"> 
-                    <circle cx="20" cy="25" r="20" stroke-width="3" fill="#00B6FF" />
-                  </svg> 
-            <a href="https://developers.google.com/speed/pagespeed/insights/?url=hungryram.com" target="_blank">Test Our Scores</a>
+                <i class="fas fa-circle fa-2x"></i><a href="https://developers.google.com/speed/pagespeed/insights/?url=hungryram.com" target="_blank">Test Our Scores</a>
             </div>
         </div>
     </div>
