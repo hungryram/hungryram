@@ -2,6 +2,52 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
+@media screen and (max-width: 700px){
+    .nav{
+        transition: all .3s ease-in-out;
+        width: 0%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        overflow: hidden;
+    }
+
+    .open {
+        background-color: black;
+        width: 70%;
+        transition: all .3s ease-in-out;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1000;
+        display: block;
+    }
+
+    .nav ul a:first-child {
+        margin-top: 100px;
+    }
+
+    .nav ul a {
+        display: block;
+        padding: 20px 0;
+        text-align: left;
+        color: #fff;
+    }
+
+    .nav-mobile {
+        z-index: 2000;
+    }
+
+}
+
+@media screen and (min-width: 700px) {
+    .nav-mobile {
+        display: none;
+    }
+}
+
 body {
     font-family: "Roboto", sans-serif;
     line-height: 1.5
@@ -118,7 +164,7 @@ nav ul {
     text-align: right;
 }
 
-nav ul li a {
+nav ul a {
     color: #d1d1d1;
     text-decoration: none;
     font-family: "Roboto", sans-serif;
