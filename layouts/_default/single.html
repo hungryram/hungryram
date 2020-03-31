@@ -1,8 +1,10 @@
 {{ define "main" }}
 <section id="main">
-  <h1 id="title">{{ .Params.Blogpost.Title }}</h1>
+  <h1 id="title">{{ .Title }}</h1>
   <h4 id="date"> {{ .Params.Blogpost.Date }} </h4>
 
+  <img src="{{.Site.BaseURL}}{{ .Params.Blogpost.Blogimage }}" alt="{{ .Params.Blogpost.blogimgalt }}" width="400">
+  
   <div>
         <article id="content">
            {{ .Params.Blogpost.Body }}

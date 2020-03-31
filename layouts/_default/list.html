@@ -4,7 +4,7 @@
     <!-- Ranges through content/posts/*.md -->
     {{ range .Pages }}
         <div class="blog-result">
-            <a href="{{.Permalink}}" class="blog-title-page"><h2>{{ .Params.Blogpost.Title}}</h2></a>
+            <a href="{{.Permalink}}" class="blog-title-page"><h2>{{ .Title}}</h2></a>
             <p style="font-size: 14px;">{{ .Params.Blogpost.Date }}</p>
             <p>{{ .Summary }}</p>
             <a href="{{.Permalink}}" class="read-blog-page">Read More</a>
