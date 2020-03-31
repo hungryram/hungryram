@@ -13,6 +13,7 @@ collections:
     editor:
       preview: false
     fields:
+      - { label: 'Blog Title', name: 'title', widget: 'string' }
       - label: 'SEO'
         name: 'blogseo'
         widget: 'object'
@@ -23,7 +24,6 @@ collections:
         name: 'blogpost'
         widget: 'object'
         fields:
-          - { label: 'Blog Title', name: 'title', widget: 'string' }
           - { label: 'Publish Date', name: 'date', widget: 'datetime', dateformat: 'MM-DD-YYYY', timeformat: false, format: 'LLL'}
           - { label: 'Body', name: 'body', widget: 'markdown' }
 # Default Pages
