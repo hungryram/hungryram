@@ -244,7 +244,8 @@ nav ul a {
 /* ABOUT */
 
 .about__container {
-    background-color: #ffffff;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgb(255, 255, 255)),
+        url("../images/aboutbg.jpg");
     background-size: cover;
     padding: 60px 0;
 }
