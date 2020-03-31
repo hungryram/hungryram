@@ -24,7 +24,7 @@ collections:
         widget: 'object'
         fields:
           - { label: 'Blog Title', name: 'title', widget: 'string' }
-          - { label: 'Publish Date', name: 'date', widget: 'datetime', dateformat: 'MM.DD.YYYY' }
+          - { label: 'Publish Date', name: 'date', widget: 'datetime', dateformat: 'MM-DD-YYYY', timeformat: false, format: 'LLL'}
           - { label: 'Body', name: 'body', widget: 'markdown' }
 # Default Pages
   - name: 'defaultpages'
