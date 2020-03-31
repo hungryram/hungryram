@@ -13,10 +13,19 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - label: 'SEO'
+        name: 'blogseo'
+        widget: 'object'
+        fields:     
+          - { label: 'Meta Title', name: 'metatitle', widget: 'string' }
+          - { label: 'Meta Title', name: 'metadescription', widget: 'string' }
+      - label: 'Blog'
+        name: 'blogpost'
+        widget: 'object'
+        fields:
+          - { label: 'Blog Title', name: 'title', widget: 'string' }
+          - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
 # Default Pages
   - name: 'defaultpages'
     label: 'Default Pages'
