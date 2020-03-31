@@ -66,6 +66,7 @@ body {
 
 p {
     line-height: 2;
+    font-size: 1.2rem;
 }
 
 .interior-image {
@@ -869,6 +870,65 @@ footer {
     border: 1px solid #696969;
 }
 
+/* REAL ESTATE PAGE */
+
+.realestate__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.re-left-container,
+.re-right-container {
+    flex: 50%;
+}
+
+.re-left-container img {
+    width: 80%;
+}
+
+.re-content {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.re-content a {
+    background-color: black;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* BLOG */
+
+.blog-result {
+    padding: 25px 50px;
+    background-color: #F5F5F5;
+    margin: 10px;
+    float: left;
+    width: 33.3%;
+}
+
+.blog-result p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+.blog-title-page {
+    text-decoration: none;
+    color: #000;
+}
+
+.read-blog-page {
+    color: #00B6FF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
 /* Medium (md) */
 @media (max-width: 768px) {
 .testimonial__container .slick-initialized .slick-slide,
@@ -882,8 +942,18 @@ footer {
 .about-content__container,
 .input__container,
 .testimonial__container,
-.contact-page__container {
+.contact-page__container,
+.realestate__container {
     flex-direction: column;
+}
+
+.re-left-container,
+.re-right-container {
+    padding: 50px 0;
+}
+
+.blog-result {
+    width: 100%;
 }
 
 .slider__container {

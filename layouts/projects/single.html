@@ -20,7 +20,7 @@
     </div>
 
     <div class="the-launch">
-        <h2>03</h2>
+        <h2>04</h2>
         <h1>The Launch</h1>
         <p>{{ .Params.Overview.Thelaunch }}</p>
     </div>
@@ -33,6 +33,15 @@
 </div>
 <div class="project-main-image">
     <img src="{{ .Site.BaseURL }}{{ .Params.Overview.Projectimage }}" alt="{{ .Params.Overview.Projectimagealt }}">
+</div>
+
+<div>
+    {{ with .PrevInSection }}
+      <a class="previous" href="{{.Permalink}}"> {{.Params.Overview.Title}}</a>
+    {{ end }}
+    {{ with .NextInSection }}
+      <a class="next" href="{{.Permalink}}"> {{.Params.Overview.Title}}</a>
+    {{ end }}
 </div>
 
 {{ end }}

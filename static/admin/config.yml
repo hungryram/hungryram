@@ -35,8 +35,18 @@ collections:
         label: 'About'
         name: 'about'
         fields:
-          - {label: 'Title', name: 'title', widget: 'string'}
-          - {label: 'Body', name: 'body', widget: 'markdown'}
+          - label: 'SEO'
+            name: 'seo'
+            widget: 'object'
+            fields:
+              - { label: 'Meta Title', name: 'metatitle', widget: 'string' }
+              - { label: 'Meta Description', name: 'metadescription', widget: 'string' }
+          - label: 'About Content'
+            name: 'aboutcontent'
+            widget: 'object'
+            fields:
+              - { label: 'Content', name: 'body', widget: 'markdown' }
+
 # Custom Pages
   - name: 'pages'
     label: 'Custom Page'

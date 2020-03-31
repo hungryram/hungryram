@@ -18,11 +18,11 @@
 
     <script src="https://kit.fontawesome.com/2dac2bfc0f.js" crossorigin="anonymous"></script>
 
-    {{ with .Title }}
-    <title>{{ . | title }}</title>
+    {{ with .Params.Seo.MetaTitle }}
+    <title>{{ . }}</title>
     {{ end }}
 
-    {{ with .Params.metadescription }}
+    {{ with .Params.Seo.Metadescription }}
     <meta name="description" content="{{ . }}">
     {{ end }}
     
