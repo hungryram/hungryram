@@ -4,7 +4,7 @@
 <div class="project-list-image"></div>
     <ul class="project-list">
         {{ range .Pages }}
-        <li><a href="{{.Permalink}}"> {{ .Params.Overview.Title }} </a></li>
+        <li><a href="{{.Permalink}}"> {{ .Params.Title }} </a></li>
     {{ end }}
     </ul>
 
