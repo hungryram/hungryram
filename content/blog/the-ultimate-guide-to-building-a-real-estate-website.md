@@ -6,9 +6,6 @@ blogseo:
 blogpost:
   date: 'April 1, 2020 2:09 AM'
   body: >-
-    <!--StartFragment-->
-
-
     So you want to learn how to build a real estate website with a working IDX
     to save money. It’s no easy task so let’s meet somewhere in between. This
     guide is aimed to give real estate professionals the chance to try and build
@@ -266,9 +263,9 @@ blogpost:
 
 
     <code><style type="text/css"> /*quick search*/ .ihf-quick-search-form
-    .field-label { color: #fff; } /* adds margin to result page on mobile */
-    .ihf-grid-result.col-xs-12 { margin-bottom: 30px; } /* removes padding on
-    details page */ #ihf-main-container .ihf-listing-information-alt { padding:
+    .field-label { color: #fff; } / *adds margin to result page on mobile* /
+    .ihf-grid-result.col-xs-12 { margin-bottom: 30px; } / *removes padding on
+    details page* / #ihf-main-container .ihf-listing-information-alt { padding:
     0px!important; } #ihf-main-container .modal-dialog { padding-top:
     13%!important; } /*Search top bar*/ .btn-primary { background-color:
     #222222!important; } /*featured listings gallery home page*/
@@ -279,19 +276,19 @@ blogpost:
     #ihf-main-container .ihf-widget .row { padding: 5px; }
     .ihf-gallery-slider-paging a, #ihf-main-container .carousel-control { color:
     #0B1723!important; } #ihf-main-container .title-bar-1 { color:
-    #fff!important; background-color: #0B1723!important; } /*#ihf-main-container
-    { padding: 30px 0px; }*/ /*** Take out the divider line between content and
-    sidebar ***/ #main-content .container:before {background: none;} /*** Hide
-    Sidebar ***/ .page #sidebar {display:none;} /*** Expand the content area to
-    fullwidth ***/ @media (min-width: 981px){ #left-area { width: 100%; padding:
-    23px 0px 0px !important; float: none !important; } } #ihf-main-container
-    .panel-default>.panel-heading { color: #fff!important; background-color:
-    #222222!important; } .ihf-powered-by { display: none; } #ihf-main-container
-    .carousel-control { height: auto; background: none; border: none; }
-    #ihf-main-container .carousel-caption { background: none; }
-    #ihf-main-container .modal { width: auto; margin-left: 0; background-color:
-    transparent; border: 0; } .ihf-results-links > a:nth-child(1) { display:
-    none; } </style> <script type="text/javascript">
+    #fff!important; background-color: #0B1723!important; }
+    /*\#ihf-main-container { padding: 30px 0px; }*/ / ***Take out the divider
+    line between content and sidebar*** / #main-content .container:before
+    {background: none;} / ***Hide Sidebar*** / .page #sidebar {display:none;} /
+    ***Expand the content area to fullwidth*** / @media (min-width: 981px){
+    #left-area { width: 100%; padding: 23px 0px 0px !important; float: none
+    !important; } } #ihf-main-container .panel-default>.panel-heading { color:
+    #fff!important; background-color: #222222!important; } .ihf-powered-by {
+    display: none; } #ihf-main-container .carousel-control { height: auto;
+    background: none; border: none; } #ihf-main-container .carousel-caption {
+    background: none; } #ihf-main-container .modal { width: auto; margin-left:
+    0; background-color: transparent; border: 0; } .ihf-results-links >
+    a:nth-child(1) { display: none; } </style> <script type="text/javascript">
     jQuery(document).on("ready", function() { jQuery("#ihf-main-container
     .nav-tabs a[href*='#']").off("click"); }); </script>
 
@@ -317,9 +314,6 @@ blogpost:
 
 
     If this guide was helpful to you, please let me know!
-
-
-    <!--EndFragment-->
   blogimage: uploads/corinne-kutz-211251-unsplash.jpg
   blogimgalt: guide to real estate web design
 ---
