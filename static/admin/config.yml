@@ -2,10 +2,12 @@ backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
 media_folder: static/uploads
-public_folder: /uploads
+public_folder: uploads
+publish_mode: editorial_workflow
 collections:
 # Blog
   - name: 'blog'
+    e
     label: 'Blog'
     folder: 'content/blog'
     create: true
@@ -81,6 +83,7 @@ collections:
     editor:
       preview: false
     fields:
+      - { label: 'Project Title', name: 'title', widget: 'string', required: true }
       -  label: 'Page SEO'
          name: 'seo'
          widget: 'object'
@@ -91,7 +94,6 @@ collections:
          name: 'overview'
          widget: 'object'
          fields:
-          - { label: 'Project Title', name: 'title', widget: 'string', required: true }
           - { label: 'The Client', name: 'theclient', widget: 'markdown' }
           - { label: 'The Challenge', name: 'thechallenge', widget: 'markdown' }
           - { label: 'The Approach', name: 'theapproach', widget: 'markdown' }
