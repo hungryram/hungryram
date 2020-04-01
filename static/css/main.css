@@ -1,3 +1,8 @@
+p {
+    line-height: 2;
+    font-size: 1rem;
+}
+
 
 @media screen and (max-width: 700px){
     .nav{
@@ -61,11 +66,6 @@ body {
     box-sizing: border-box;
 }
 
-p {
-    line-height: 2;
-    font-size: 1.2rem;
-}
-
 .interior-image {
     height: 30vh;
     display: flex;
@@ -76,6 +76,8 @@ p {
     background-size: cover;
     color: #fff;
     font-size: 2rem;
+    text-align: center;
+    padding: 0 10px;
 }
 
 main {
@@ -908,6 +910,10 @@ footer {
     width: 33.3%;
 }
 
+.featured-blogimg {
+    padding: 50px 0;
+}
+
 .blog-result p {
     font-size: 16px;
     line-height: 1.5;
@@ -1002,6 +1008,16 @@ main {
 
 .speed__container {
     padding-top: 100px;
+}
+
+.client-project__container {
+    padding: 0;
+    border: none;
+    width: 100%;
+}
+
+.interior-image h2 {
+    font-size: .6em;
 }
 
 }
