@@ -7,7 +7,6 @@ publish_mode: editorial_workflow
 collections:
 # Blog
   - name: 'blog'
-    e
     label: 'Blog'
     folder: 'content/blog'
     create: true
