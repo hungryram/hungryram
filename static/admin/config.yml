@@ -71,7 +71,7 @@ collections:
       preview: false
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Page URL', name: 'url', widget: 'string' }
       - { label: 'Meta Title', name: 'metatitle', widget: 'string' }
       - { label: 'Meta Description', name: 'metadescription', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
@@ -85,6 +85,7 @@ collections:
       preview: false
     fields:
       - { label: 'Project Title', name: 'title', widget: 'string', required: true }
+      - { label: 'Project URL', name: 'url', widget: 'string'}
       -  label: 'Page SEO'
          name: 'seo'
          widget: 'object'
