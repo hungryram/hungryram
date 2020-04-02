@@ -1,6 +1,6 @@
 ---
 title: Wordpress Vs Static Sites
-url: wordpress-website
+url: wordpress vs static sites
 blogseo:
   metatitle: Wordpress Vs Static Sites - Hungry Ram
   metadescription: Build a high performing website with Hungry Ram
