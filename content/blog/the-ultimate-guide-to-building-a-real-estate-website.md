@@ -1,7 +1,7 @@
 ---
 title: Wordpress Vs Static Sites
 blogseo:
-  metatitle: Hungry Ram - Wordpress Vs Static Sites
+  metatitle: Wordpress Vs Static Sites - Hungry Ram
   metadescription: Build a high performing website with Hungry Ram
 blogpost:
   date: 'April 1, 2020 2:09 AM'
@@ -29,6 +29,17 @@ blogpost:
     capabilities.
 
 
+    If a client needs a website up and running within a few days, Wordpress is
+    definitely something I would look towards. The reason being is that
+    Wordpress is known to get sites up and running quick and I definitely have
+    my shortcuts and know Wordpress inside and out.
+
+
+    If large sites need to scale up and expand through various features,
+    Wordpress is definitely something to look at due to the open source, themes,
+    and plugins available in the marketplace.
+
+
     ## When to use Static Sites
 
 
@@ -40,6 +51,10 @@ blogpost:
 
     Although static sites do take longer to build, it definitely is worth the
     time and investment when seeing it's high performance.
+
+
+    If you're interested in getting a static website going for your business,
+    [let's get in touch](/contact)
   blogimage: uploads/corinne-kutz-211251-unsplash.jpg
   blogimgalt: guide to static websites
 ---
