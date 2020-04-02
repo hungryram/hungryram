@@ -52,6 +52,11 @@ p {
     .about-img {
         padding: 0 100px;
     }
+
+    #content {
+        width: 50%;
+        margin: 0 auto;;
+    }
 }
 
 body {
@@ -908,6 +913,20 @@ footer {
     margin: 10px;
     float: left;
     width: 33.3%;
+}
+
+#content p {
+    line-height: 1.8;
+    color: #686868;
+    font-size: 18px;
+    font-family: "Monstserrat", sans-serif;
+    font-weight: 100;
+}
+
+#content a {
+    color: #00B6FF;
+    font-weight: 600;
+    text-decoration: none;
 }
 
 .featured-blogimg {

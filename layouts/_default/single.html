@@ -1,13 +1,13 @@
 {{ define "main" }}
 <section id="main">
-  <h1 id="title">{{ .Title }}</h1>
-  <h4 id="date"> {{ .Params.Blogpost.Date }} </h4>
+  <div id="content">
+    <h1 id="title">{{ .Title }}</h1>
+    <h4 id="date"> {{ .Params.Blogpost.Date }} </h4>
 
-  <img src="{{.Site.BaseURL}}{{ .Params.Blogpost.Blogimage }}" alt="{{ .Params.Blogpost.blogimgalt }}" width="400" class="featured-blogimg">
-  
-  <div>
-        <article id="content">
-           {{ .Params.Blogpost.Body }}
+    <img src="{{.Site.BaseURL}}{{ .Params.Blogpost.Blogimage }}" alt="{{ .Params.Blogpost.blogimgalt }}" class="featured-blogimg">
+
+        <article>
+           {{ .Params.Blogpost.Body | markdownify }}
         </article>
   </div>
 </section>

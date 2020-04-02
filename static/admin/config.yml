@@ -16,6 +16,7 @@ collections:
       preview: false
     fields:
       - { label: 'Blog Title', name: 'title', widget: 'string' }
+      - { label: 'Blog URL', name: 'url', widget: 'string' }
       - label: 'SEO'
         name: 'blogseo'
         widget: 'object'
