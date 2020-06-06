@@ -3,6 +3,10 @@ p {
     font-size: 1rem;
 }
 
+body {
+    overflow: hidden;
+}
+
 
 @media screen and (max-width: 700px){
     .nav{
